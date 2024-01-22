@@ -43,8 +43,7 @@ namespace RepasoC.Controladores
                         switch (opcionEmpleado) 
                         {
                             case 0:
-                                Console.WriteLine("[INFO] - Se va a cerrar la aplicacion");
-                                cerrarMenu = true;
+                                Console.WriteLine("[INFO] - Se va a volver al menu principal");
                                 break;
                             case 1:
                                 Console.WriteLine("[INFO] - Ha seleccionado la opcion validar cliente");
@@ -67,8 +66,7 @@ namespace RepasoC.Controladores
                         switch (opcionCliente)
                         {
                             case 0:
-                                Console.WriteLine("[INFO] - Se va a cerrar la aplicacion");
-                                cerrarMenu = true;
+                                Console.WriteLine("[INFO] - Se va a volver al menu principal");
                                 break;
                             case 1:
                                 Console.WriteLine("[INFO] - Ha seleccionado la opcion registro");

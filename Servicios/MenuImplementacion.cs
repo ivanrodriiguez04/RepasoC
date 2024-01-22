@@ -19,30 +19,30 @@ namespace RepasoC.Servicios
             Console.WriteLine("1. Version empleado");
             Console.WriteLine("2. Version cliente");
             Console.WriteLine("Introduzca la opcion deseada:");
-            opcion = Convert.ToInt32(Console.ReadLine());
+            opcion = Console.ReadKey(true).KeyChar - ('0');
             return opcion;
         }
 
         public int mostrarMenuYSeleccionCliente()
         {
             int opcion = 0;
-            Console.WriteLine("0. Cerrar App");
+            Console.WriteLine("0. Volver al menu principal");
             Console.WriteLine("1. Registrarse");
             Console.WriteLine("2. Login");
             Console.WriteLine("Introduzca la opcion deseada:");
-            opcion = Convert.ToInt32(Console.ReadLine());
+            opcion = Console.ReadKey(true).KeyChar - ('0');
             return opcion;
         }
 
         public int mostrarMenuYSeleccionEmpleado()
         {
             int opcion = 0;
-            Console.WriteLine("0. Cerrar App");
+            Console.WriteLine("0. Volver al menu principal");
             Console.WriteLine("1. Validar cliente");
             Console.WriteLine("2. Borrar cliente");
             Console.WriteLine("3. Mostrar cliente");
             Console.WriteLine("Introduzca la opcion deseada:");
-            opcion = Convert.ToInt32(Console.ReadLine());
+            opcion = Console.ReadKey(true).KeyChar - ('0');
             return opcion;
         }
     }
