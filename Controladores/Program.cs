@@ -47,12 +47,15 @@ namespace RepasoC.Controladores
                                 break;
                             case 1:
                                 Console.WriteLine("[INFO] - Ha seleccionado la opcion validar cliente");
+                                oE.validarCliente(listaClientes);
                                 break; 
                             case 2:
                                 Console.WriteLine("[INFO] - Ha seleccionado la opcion borrar cliente");
+                                oE.borrarCliente(listaClientes);
                                 break; 
                             case 3:
                                 Console.WriteLine("[INFO] - Ha seleccionado la opcion mostrar cliente");
+                                oE.mostrarClientes(listaClientes);
                                 break;
                             default:
                                 Console.WriteLine("[INFO] - La opcion seleccionada no coincide con ninguna opcion mostrada anteriormente");
@@ -61,7 +64,6 @@ namespace RepasoC.Controladores
                         break; 
                     case 2:
                         Console.WriteLine("[INFO] - Ha seleccionado la opcion de los clientes");
-                        Console.WriteLine("[INFO] - Ha seleccionado la opcion de los empleados");
                         opcionCliente = mI.mostrarMenuYSeleccionCliente();
                         switch (opcionCliente)
                         {
@@ -70,9 +72,11 @@ namespace RepasoC.Controladores
                                 break;
                             case 1:
                                 Console.WriteLine("[INFO] - Ha seleccionado la opcion registro");
+                                oC.registrarCliente(listaClientes);
                                 break;
                             case 2:
                                 Console.WriteLine("[INFO] - Ha seleccionado la opcion de login");
+                                oC.loginCliente(listaClientes);
                                 break;
                             default:
                                 Console.WriteLine("[INFO] - La opcion seleccionada no coincide con ninguna opcion mostrada anteriormente");
